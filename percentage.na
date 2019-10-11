@@ -1,14 +1,43 @@
-"Geben Sie die max. Punkte ein:"
-inc 12
+"Geben Sie max. Punkte ein:Geben Sie erreichte Punktzahl ein:Prozent:"
+inc 20
 
-# print "Geben Sie die max. Punkte ein:"
+# max Punkte
 lit 0
-lit 20
-lit 25
+lit 26
+lit 27
 out 2
 
-# read input from user
 la 0 32
 la 0 36
 in 0
+
+# erreichte Punkte
+lit 26
+lit 34
+lit 35
+out  2
+
+la 0 40
+la 0 44
+in 0
+
+la 0 48
+lv 0 40
+lit 100
+mul
+lv 0 32
+div
 sto
+
+# Prozent
+lit 60
+lit 8
+lit 9
+out  2
+
+lv 0 48
+lit 1
+out 0
+out 3
+
+halt
