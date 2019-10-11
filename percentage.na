@@ -1,0 +1,14 @@
+"Geben Sie die max. Punkte ein:"
+inc 12
+
+# print "Geben Sie die max. Punkte ein:"
+lit 0
+lit 20
+lit 25
+out 2
+
+# read input from user
+la 0 32
+la 0 36
+in 0
+sto
